@@ -95,6 +95,7 @@ section { padding: 48px 0; scroll-margin-top: 60px; }
 .msg { max-width: 85%; padding: 8px 12px; border-radius: 16px; white-space: pre-wrap; word-break: break-word; font-size: .95rem; }
 .msg.user { align-self: flex-end; background: #a6e57c; border-top-right-radius: 4px; }
 .msg.bot { align-self: flex-start; background: #fff; border-top-left-radius: 4px; }
+.messages > * { flex-shrink: 0; }
 .carousel { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; align-self: stretch; }
 .mini { flex: 0 0 170px; background: #fff; border-radius: 12px; overflow: hidden; font-size: .85rem; }
 .mini .art { background: var(--cream); text-align: center; font-size: 2rem; padding: 6px 0; }
