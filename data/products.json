@@ -1,0 +1,40 @@
+{
+  "categories": [
+    { "id": "coffee", "name": "กาแฟ", "emoji": "☕", "keywords": ["กาแฟ", "coffee", "คอฟฟี่"] },
+    { "id": "tea", "name": "ชาและเครื่องดื่ม", "emoji": "🍵", "keywords": ["ชา", "tea", "เครื่องดื่มไม่มีกาแฟ", "ไม่มีกาแฟ", "ช็อกโกแลต"] },
+    { "id": "bakery", "name": "เบเกอรี่", "emoji": "🥐", "keywords": ["เบเกอรี่", "ขนม", "bakery", "ของหวาน", "เค้ก", "cake", "dessert"] },
+    { "id": "service", "name": "บริการ", "emoji": "🛎️", "keywords": ["บริการ", "service", "เวิร์กช็อป", "จัดเลี้ยง", "สอน"] }
+  ],
+  "products": [
+    { "id": "espresso", "category": "coffee", "emoji": "☕", "name": "เอสเพรสโซ่", "nameEn": "Espresso", "price": 45, "unit": "แก้ว", "inStock": true, "featured": false,
+      "description": "ช็อตกาแฟเข้มข้นจากเมล็ดอาราบิก้าดอยช้าง คั่วกลาง", "options": "ร้อน", "keywords": ["เอสเพรสโซ", "เอสเปรสโซ่", "espresso"] },
+    { "id": "americano", "category": "coffee", "emoji": "☕", "name": "อเมริกาโน่", "nameEn": "Americano", "price": 55, "unit": "แก้ว", "inStock": true, "featured": true,
+      "description": "เอสเพรสโซ่ผสมน้ำ รสชาติกลมกล่อม ไม่มีน้ำตาล", "options": "ร้อน / เย็น (+5 บาท)", "keywords": ["อเมริกาโน", "อเมริกาโน่", "americano", "กาแฟดำ"] },
+    { "id": "latte", "category": "coffee", "emoji": "🥛", "name": "ลาเต้", "nameEn": "Caffè Latte", "price": 65, "unit": "แก้ว", "inStock": true, "featured": true,
+      "description": "เอสเพรสโซ่กับนมสดสตีมเนียนนุ่ม หวานน้อย", "options": "ร้อน / เย็น (+5 บาท) / ปั่น (+10 บาท)", "keywords": ["ลาเต้", "ลาเต", "latte"] },
+    { "id": "cappuccino", "category": "coffee", "emoji": "☕", "name": "คาปูชิโน่", "nameEn": "Cappuccino", "price": 65, "unit": "แก้ว", "inStock": true, "featured": false,
+      "description": "เอสเพรสโซ่ นมสด และฟองนมหนานุ่ม โรยผงโกโก้", "options": "ร้อน / เย็น (+5 บาท)", "keywords": ["คาปูชิโน", "คาปูชิโน่", "คาปู", "cappuccino"] },
+    { "id": "mocha", "category": "coffee", "emoji": "🍫", "name": "มอคค่า", "nameEn": "Mocha", "price": 70, "unit": "แก้ว", "inStock": true, "featured": false,
+      "description": "กาแฟผสมช็อกโกแลตเบลเยียมและนมสด", "options": "ร้อน / เย็น (+5 บาท) / ปั่น (+10 บาท)", "keywords": ["มอคค่า", "มอคคา", "มอคค่ะ", "mocha"] },
+    { "id": "thai-tea", "category": "tea", "emoji": "🧋", "name": "ชาไทย", "nameEn": "Thai Milk Tea", "price": 50, "unit": "แก้ว", "inStock": true, "featured": true,
+      "description": "ชาไทยต้มสด หอมเข้ม ผสมนมข้นหวาน", "options": "เย็น / ปั่น (+10 บาท)", "keywords": ["ชาไทย", "ชาเย็น", "ชานม", "thaitea", "thai tea"] },
+    { "id": "matcha-latte", "category": "tea", "emoji": "🍵", "name": "มัทฉะลาเต้", "nameEn": "Matcha Latte", "price": 70, "unit": "แก้ว", "inStock": true, "featured": false,
+      "description": "มัทฉะเกรดพิธีชงจากอุจิ ญี่ปุ่น กับนมสด", "options": "ร้อน / เย็น (+5 บาท)", "keywords": ["มัทฉะ", "มัจฉะ", "ชาเขียว", "matcha", "green tea", "greentea"] },
+    { "id": "lemon-tea", "category": "tea", "emoji": "🍋", "name": "ชามะนาว", "nameEn": "Iced Lemon Tea", "price": 45, "unit": "แก้ว", "inStock": true, "featured": false,
+      "description": "ชาดำกับน้ำมะนาวสด สดชื่น เปรี้ยวหวานลงตัว", "options": "เย็น", "keywords": ["ชามะนาว", "เลมอนที", "lemon tea", "lemontea"] },
+    { "id": "cocoa", "category": "tea", "emoji": "🍫", "name": "โกโก้", "nameEn": "Cocoa", "price": 55, "unit": "แก้ว", "inStock": true, "featured": false,
+      "description": "โกโก้ดัตช์เข้มข้นกับนมสด ไม่มีกาแฟ เหมาะกับเด็ก", "options": "ร้อน / เย็น (+5 บาท) / ปั่น (+10 บาท)", "keywords": ["โกโก้", "cocoa", "ช็อกโกแลตเย็น", "ช็อคโกแลต"] },
+    { "id": "croissant", "category": "bakery", "emoji": "🥐", "name": "ครัวซองต์เนยสด", "nameEn": "Butter Croissant", "price": 55, "unit": "ชิ้น", "inStock": true, "featured": true,
+      "description": "ครัวซองต์เนยฝรั่งเศส อบใหม่ทุกเช้า กรอบนอกนุ่มใน", "options": "อุ่นร้อนได้", "keywords": ["ครัวซองต์", "ครัวซอง", "croissant"] },
+    { "id": "brownie", "category": "bakery", "emoji": "🍫", "name": "บราวนี่", "nameEn": "Fudgy Brownie", "price": 45, "unit": "ชิ้น", "inStock": true, "featured": false,
+      "description": "บราวนี่ช็อกโกแลตเข้มข้น หน้าฟิล์ม เนื้อหนึบ", "options": "", "keywords": ["บราวนี่", "บราวนี", "brownie"] },
+    { "id": "cheesecake", "category": "bakery", "emoji": "🍰", "name": "บาสก์ชีสเค้ก", "nameEn": "Basque Cheesecake", "price": 85, "unit": "ชิ้น", "inStock": false, "featured": false,
+      "description": "ชีสเค้กสไตล์บาสก์ หน้าไหม้ เนื้อเนียนละลายในปาก", "options": "", "keywords": ["ชีสเค้ก", "ชีสเค็ก", "บาสก์", "cheesecake"] },
+    { "id": "honey-toast", "category": "bakery", "emoji": "🍞", "name": "ฮันนี่โทสต์", "nameEn": "Honey Toast", "price": 120, "unit": "จาน", "inStock": true, "featured": false,
+      "description": "ขนมปังหนานุ่มราดน้ำผึ้งเดือนห้า เสิร์ฟพร้อมไอศกรีมวานิลลา", "options": "สำหรับ 2–3 ท่าน", "keywords": ["ฮันนี่โทสต์", "ฮันนี่โทส", "โทสต์", "ปังเย็น", "honey toast", "honeytoast"] },
+    { "id": "workshop", "category": "service", "emoji": "🎓", "name": "เวิร์กช็อปดริปกาแฟ", "nameEn": "Coffee Drip Workshop", "price": 590, "unit": "ท่าน", "inStock": true, "featured": false,
+      "description": "เรียนดริปกาแฟเบื้องต้น 2 ชั่วโมง ทุกวันเสาร์ 13:00 น. รับ 8 ท่าน/รอบ รวมอุปกรณ์และเมล็ดกาแฟ 100 กรัมกลับบ้าน", "options": "จองล่วงหน้าทาง LINE อย่างน้อย 2 วัน", "keywords": ["เวิร์กช็อป", "เวิร์คช็อป", "workshop", "เรียนดริป", "สอนดริป", "ดริป", "คลาส"] },
+    { "id": "catering", "category": "service", "emoji": "🧺", "name": "ชุดเบรกจัดเลี้ยง", "nameEn": "Coffee Break Catering", "price": 59, "unit": "ชุด", "inStock": true, "featured": false,
+      "description": "ชุดเบรกสำหรับประชุม/สัมมนา: เครื่องดื่ม 1 แก้ว + เบเกอรี่ 1 ชิ้น สั่งขั้นต่ำ 30 ชุด ส่งฟรีในเขตเมือง", "options": "สั่งล่วงหน้าอย่างน้อย 3 วัน", "keywords": ["จัดเลี้ยง", "ชุดเบรก", "เบรก", "catering", "คอฟฟี่เบรก", "สัมมนา", "ประชุม"] }
+  ]
+}

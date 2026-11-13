@@ -1,0 +1,17 @@
+{
+  "name": "line-oa-shop",
+  "version": "1.0.0",
+  "description": "à¹€à¸§à¹‡à¸šà¹„à¸‹à¸•à¹Œà¸£à¹‰à¸²à¸™à¸„à¹‰à¸²à¸—à¸µà¹ˆà¹€à¸Šà¸·à¹ˆà¸­à¸¡à¸•à¹ˆà¸­ LINE Official Account à¸ªà¸³à¸«à¸£à¸±à¸šà¸•à¸­à¸šà¸„à¸³à¸–à¸²à¸¡à¸ªà¸´à¸™à¸„à¹‰à¸²à¹à¸¥à¸°à¸šà¸£à¸´à¸à¸²à¸£",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "@line/bot-sdk": "^9.4.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2"
+  }
+}

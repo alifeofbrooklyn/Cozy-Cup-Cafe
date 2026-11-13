@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cozy Cup Café — สั่งและสอบถามผ่าน LINE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&family=Sarabun:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#top">☕ <span id="brand-name">Cozy Cup Café</span></a>
+    <nav>
+      <a href="#products">สินค้า</a>
+      <a href="#line">LINE OA</a>
+      <a href="#chat">ทดลองถาม</a>
+      <a href="#team">ผู้จัดทำ</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow" id="shop-name-th">โคซี่คัพ คาเฟ่</p>
+        <h1 id="shop-tagline">กาแฟคั่วสด ขนมอบใหม่ทุกวัน</h1>
+        <p class="lead">ถามราคา รายละเอียด และสถานะสินค้าได้ตลอด 24 ชม. ผ่าน LINE Official Account — บอทตอบจากข้อมูลชุดเดียวกับหน้าเว็บนี้</p>
+        <div class="cta">
+          <a class="btn btn-line" id="add-friend" href="#line" target="_blank" rel="noopener">เพิ่มเพื่อนใน LINE</a>
+          <a class="btn btn-ghost" href="#products">ดูสินค้าทั้งหมด</a>
+        </div>
+      </div>
+      <ul class="info">
+        <li><span>🕗</span><div><b>เวลาทำการ</b><p id="shop-hours"></p></div></li>
+        <li><span>📍</span><div><b>ที่อยู่</b><p id="shop-address"></p></div></li>
+        <li><span>📞</span><div><b>ติดต่อ</b><p id="shop-contact"></p></div></li>
+      </ul>
+    </section>
+
+    <section class="promos" aria-label="โปรโมชั่น">
+      <h2>🎉 โปรโมชั่น</h2>
+      <div id="promo-list" class="promo-list"></div>
+    </section>
+
+    <section id="products">
+      <div class="section-head">
+        <h2>สินค้าและบริการ</h2>
+        <input id="search" type="search" placeholder="ค้นหาสินค้า เช่น ลาเต้, ขนม" aria-label="ค้นหาสินค้า">
+      </div>
+      <div id="filters" class="chips" role="tablist"></div>
+      <div id="grid" class="grid"></div>
+      <p id="empty" class="muted" hidden>ไม่พบสินค้าที่ค้นหา</p>
+    </section>
+
+    <section id="line" class="line-section">
+      <div>
+        <h2>ถามบอทผ่าน LINE Official Account</h2>
+        <ol class="steps">
+          <li>สแกน QR หรือกดปุ่ม <b>เพิ่มเพื่อน</b> <span id="line-id" class="tag"></span></li>
+          <li>พิมพ์คำถาม เช่น <q>ลาเต้ราคาเท่าไหร่</q>, <q>มีขนมอะไรบ้าง</q>, <q>ไม่เกิน 50 บาท</q></li>
+          <li>บอทตอบราคา รายละเอียด และสถานะสินค้า พร้อมการ์ดสินค้าและปุ่มลิงก์กลับมาที่เว็บไซต์</li>
+        </ol>
+        <p class="muted">ข้อมูลสินค้าเก็บไว้ที่ <code>data/products.json</code> ไฟล์เดียว ทั้งหน้าเว็บและ LINE อ่านจากไฟล์นี้ ราคาที่บอทตอบจึงตรงกับหน้าเว็บเสมอ</p>
+      </div>
+      <div class="qr-card">
+        <div id="qr"></div>
+        <a class="btn btn-line" id="add-friend-2" href="#" target="_blank" rel="noopener">เพิ่มเพื่อน</a>
+      </div>
+    </section>
+
+    <section id="chat">
+      <h2>ทดลองถามบอท</h2>
+      <p class="muted">ใช้ตรรกะเดียวกับบอทใน LINE — คำตอบที่เห็นตรงนี้คือคำตอบเดียวกับที่ลูกค้าจะได้รับใน LINE</p>
+      <div class="phone">
+        <div class="phone-head"><span class="avatar">☕</span><b id="chat-title">Cozy Cup Café</b><span class="oa">LINE OA</span></div>
+        <div id="messages" class="messages" aria-live="polite"></div>
+        <div id="quick" class="quick"></div>
+        <form id="chat-form" class="chat-form">
+          <input id="chat-input" autocomplete="off" placeholder="พิมพ์ข้อความ…" aria-label="ข้อความ">
+          <button type="submit">ส่ง</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="team" class="team">
+      <h2>ผู้จัดทำ</h2>
+      <div id="members" class="members"></div>
+      <p class="advisor">อาจารย์ประจำวิชา: <b id="advisor"></b></p>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> <span id="footer-name">Cozy Cup Café</span> · โครงงานเว็บไซต์เชื่อมต่อ LINE OA</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

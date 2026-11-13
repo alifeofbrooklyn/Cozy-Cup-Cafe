@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "",
+  "outputDirectory": "public",
+  "functions": {
+    "api/index.js": { "includeFiles": "data/**" }
+  },
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/index" },
+    { "source": "/webhook", "destination": "/api/index" },
+    { "source": "/health", "destination": "/api/index" }
+  ]
+}
