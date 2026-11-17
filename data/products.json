@@ -1,6 +1,6 @@
 {
   "categories": [
-    { "id": "coffee", "name": "แกฟะ", "emoji": "☕", "keywords": ["กาแฟ", "coffee", "คอฟฟี่"] },
+    { "id": "coffee", "name": "กาแฟ", "emoji": "☕", "keywords": ["กาแฟ", "coffee", "คอฟฟี่"] },
     { "id": "tea", "name": "ชาและเครื่องดื่ม", "emoji": "🍵", "keywords": ["ชา", "tea", "เครื่องดื่มไม่มีกาแฟ", "ไม่มีกาแฟ", "ช็อกโกแลต"] },
     { "id": "bakery", "name": "เบเกอรี่", "emoji": "🥐", "keywords": ["เบเกอรี่", "ขนม", "bakery", "ของหวาน", "เค้ก", "cake", "dessert"] },
     { "id": "service", "name": "บริการ", "emoji": "🛎️", "keywords": ["บริการ", "service", "เวิร์กช็อป", "จัดเลี้ยง", "สอน"] }
